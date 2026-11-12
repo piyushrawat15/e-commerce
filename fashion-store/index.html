@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORME — Everyday, Considered</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">
+    NEW SEASON, NEW PERSPECTIVE · EVERYDAY PIECES, CONSIDERED
+  </div>
+
+  <header class="header">
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    <a class="logo" href="#home"><img src="Monochrome Grunge Creative Studio Logo.png" id="logo"></a>
+
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#new">New Arrivals</a>
+      <a href="#categories">Collections</a>
+      <a href="#story">Our Story</a>
+    </nav>
+
+    <div class="header-actions">
+      <button id="searchButton" class="header-icon" aria-label="Search">⌕</button>
+      <a href="#shop" class="bag-link">SHOP ↗</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <img class="hero-photo"
+        src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=2200&q=85"
+        alt="Streetwear fashion campaign">
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow">FORME STUDIO · COLLECTION 001</p>
+        <h1>Made for<br>the in-between.</h1>
+        <p class="hero-description">
+          Everyday pieces. Considered details.<br>
+          No unnecessary noise.
+        </p>
+        <a class="button button-light" href="#shop">
+          Discover the collection <span>↗</span>
+        </a>
+      </div>
+
+      <div class="hero-bottom">
+        <span>01 / NEW SEASON</span>
+        <span>DESIGNED FOR EVERY DAY ↓</span>
+      </div>
+    </section>
+
+    <section class="ticker">
+      <span>LESS, BUT BETTER</span>
+      <i>✳</i>
+      <span>MADE TO BE WORN</span>
+      <i>✳</i>
+      <span>EVERYDAY UNIFORM</span>
+      <i>✳</i>
+      <span>LESS, BUT BETTER</span>
+    </section>
+
+    <section class="section" id="new">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow dark-eyebrow">FRESH FROM THE STUDIO</p>
+          <h2>New arrivals<span class="period">.</span></h2>
+        </div>
+        <a class="under-link" href="#shop">Explore all pieces ↗</a>
+      </div>
+      <div class="product-grid" id="newProducts"></div>
+    </section>
+
+    <section class="categories section" id="categories">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow dark-eyebrow">FIND YOUR EVERYDAY</p>
+          <h2>Choose your uniform<span class="period">.</span></h2>
+        </div>
+        <p class="section-note">
+          Easy layers. Strong essentials.<br>
+          Pieces that work harder.
+        </p>
+      </div>
+
+      <div class="category-grid">
+        <a href="#shop" class="category-card" data-category="T-shirts">
+          <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=85" alt="T-shirts">
+          <div class="category-overlay"></div>
+          <div class="category-caption">
+            <span>01 / TOPS</span><strong>T-shirts</strong><b>↗</b>
+          </div>
+        </a>
+
+        <a href="#shop" class="category-card" data-category="Shirts">
+          <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&w=900&q=85" alt="Shirts">
+          <div class="category-overlay"></div>
+          <div class="category-caption">
+            <span>02 / LAYERS</span><strong>Shirts</strong><b>↗</b>
+          </div>
+        </a>
+
+        <a href="#shop" class="category-card" data-category="Hoodies">
+          <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=900&q=85" alt="Hoodies">
+          <div class="category-overlay"></div>
+          <div class="category-caption">
+            <span>03 / COMFORT</span><strong>Hoodies</strong><b>↗</b>
+          </div>
+        </a>
+
+        <a href="#shop" class="category-card" data-category="Trousers">
+          <img src="https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=900&q=85" alt="Trousers">
+          <div class="category-overlay"></div>
+          <div class="category-caption">
+            <span>04 / BOTTOMS</span><strong>Trousers</strong><b>↗</b>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="campaign">
+      <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=2000&q=85" alt="Fashion editorial">
+      <div class="campaign-shade"></div>
+      <div class="campaign-copy">
+        <p class="eyebrow">THE DAILY UNIFORM</p>
+        <h2>Wear it your<br>own way.</h2>
+        <a class="button button-light" href="#shop">Shop the edit <span>↗</span></a>
+      </div>
+      <span class="campaign-index">FORME CAMPAIGN / 001</span>
+    </section>
+
+    <section class="section shop-section" id="shop">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow dark-eyebrow">THE COLLECTION</p>
+          <h2>Made to move<span class="period">.</span></h2>
+        </div>
+
+        <div class="shop-tools">
+          <label class="search-box">
+            <span>⌕</span>
+            <input id="searchInput" type="search" placeholder="Find your piece…" aria-label="Search products">
+          </label>
+
+          <label class="sr-only" for="sortSelect">Sort products</label>
+          <select id="sortSelect">
+            <option value="featured">Featured</option>
+            <option value="low">Price: low to high</option>
+            <option value="high">Price: high to low</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="filter-row" id="filterRow">
+        <b>
+        <button class="filter active" data-filter="All">All pieces</button>
+        <button class="filter" data-filter="T-shirts">T-shirts</button>
+        <button class="filter" data-filter="Shirts">Shirts</button>
+        <button class="filter" data-filter="Hoodies">Hoodies</button>
+        <button class="filter" data-filter="Trousers">Trousers</button>
+        <button class="filter" data-filter="Accessories">Accessories</button>
+      </b>
+      </div>
+
+      <div class="product-grid" id="allProducts"></div>
+      <p class="no-results hidden" id="noResults">No pieces found. Try another search.</p>
+    </section>
+
+    <section class="story" id="story">
+      <div class="story-image">
+        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=85" alt="Streetwear editorial">
+      </div>
+
+      <div class="story-copy">
+        <p class="eyebrow dark-eyebrow">NOT JUST ANOTHER LABEL</p>
+        <h2>Good clothes.<br>More living<span class="period">.</span></h2>
+        <p>
+         We believe great style is more than what you wear. It’s how you express yourself, every single day. From timeless essentials to bold everyday statements, our collection brings together clean designs, effortless comfort, and a modern edge. Made for your lifestyle, styled by you. No rules, no limits, just your kind of fashion.
+        </p>
+        <P><B><i>Wear your mood. Own your style</i></B></P>
+        <p class="story-small">Replace this sample text with your actual brand story.</p>
+        <a class="under-link" href="#footer">A little more about us ↗</a>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <p class="eyebrow">THE ELVYNT EDIT</p>
+      <h2>Good things,<br>occasionally.</h2>
+      <p>New drops, styling notes and things worth knowing.</p>
+
+      <form id="newsletterForm" class="newsletter-form">
+        <label class="sr-only" for="emailInput">Email address</label>
+        <input id="emailInput" type="email" placeholder="Your email address" required>
+        <button type="submit">JOIN ↗</button>
+      </form>
+
+      <small id="newsletterMessage">Demo form only. No email is sent or stored.</small>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="logo" href="#home">ELVYNT<span>®</span></a>
+        <p>Everyday, considered.</p>
+        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗ @ELVYNT</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>EXPLORE</h3>
+        <a href="#shop">Shop all</a>
+        <a href="#new">New arrivals</a>
+        <a href="#categories">Categories</a>
+        <a href="#story">Our story</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>HELP</h3>
+        <a href="#footer">Shipping information</a>
+        <a href="#footer">Returns & exchanges</a>
+        <a href="#footer">Size guide</a>
+        <a href="mailto:hello@example.com">Contact us</a>
+      </div>
+
+      <div class="footer-note">
+        <p>Good style is personal.<br>Make it yours.</p>
+        <small>Replace sample contact details before publishing.</small>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> FORME STUDIO</span>
+      <span>MADE FOR REAL LIFE.</span>
+      <span>INDIA · INR ₹</span>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
